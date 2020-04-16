@@ -1,0 +1,8 @@
+Index: lib/main.dart
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lib/main.dart	(date 1587044966734)
++++ lib/main.dart	(date 1587044966734)
+@@ -0,0 +1,0 @@
