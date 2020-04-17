@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:share/share.dart';
 
 class GifPage extends StatelessWidget {
 
@@ -13,6 +14,14 @@ class GifPage extends StatelessWidget {
         title: Text(_gifData["title"], style: TextStyle(color: Colors.white, fontSize: 16),),
         backgroundColor: Colors.black,
         iconTheme: IconThemeData(color: Colors.white),// MUDA A COR DO ÍCONE NA BARRA SUPERIOR DO APP
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.share),
+            onPressed: (){
+              Share.share(_gifData["images"]["fixed_height"]["url"]);
+            },
+          )
+        ],
       ),
       backgroundColor: Colors.black,
       body: Center(
